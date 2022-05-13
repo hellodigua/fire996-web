@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-
 Help()
 {
    # Display Help
    echo "Hey please give me three param like this!"
    echo
    echo "Syntax: bash $0 [2021-01-01] [2022-04-04] [author]"
+   echo "示例: bash code996.sh 2021-01-01 2022-12-31 digua"
    echo "options:"
    echo "1st param     Calculate from time."
    echo "2nd param     Calculate to time."
@@ -22,19 +22,16 @@ OS_DETECT()
 
     Linux)
         # echo 'Linux'
-        # echo 'use xdg-open to open the url'
         open_url="xdg-open"
         ;;
 
     Darwin)
         # echo 'macOS'
-        # echo 'use open to open the url'
         open_url="open"
         ;;
 
     CYGWIN*|MINGW32*|MSYS*|MINGW*)
         # echo 'Windows'
-        # echo 'use start to open the url'
         open_url="start"
         ;;
 
@@ -84,25 +81,6 @@ by_day_output=`git -C $PWD log --author=$author --date=format:%u --after="$time_
 
 by_hour_output=`git -C $PWD log --author=$author --date=format:%H --after="$time_start" --before="$time_end" |grep "Date:"|awk '{print $2}'|sort|uniq -c`
 
-
-# by format:
-#  Day:
-#    %a   Day of the week - abbreviated name (Mon)
-#    %A   Day of the week - full name (Monday)
-#    %u   Day of the week - number (Monday = 1)
-#    %d   Day of the month - 2 digits (05)
-#    %e   Day of the month - digit preceded by a space ( 5)
-#    %j   Day of the year - (1-366)
-#    %u   day of week (1..7); 1 is Monday
-#    %w   Same as 'u'
-
-#  Hour:
-#    %H   Hour in 24-hour format (17)
-#    %I   Hour in 12 hour format (05)
-#    %k   Same as 'H'
-#    %l   Same as 'I' (Upper-case I = Lower-case L)
-
-
 for i in "${by_day_output[@]}"
     do
         by_day_result=`echo "$i"|sed -E 's/^ +//g'|sed 's/ /_/g'|tr '\n' ','`
@@ -116,12 +94,8 @@ for i in "${by_day_output[@]}"
 
 RED='\033[1;91m'
 NC='\033[0m' # No Color
-# echo
-# echo -e "${RED}By Day:"
-# for i in "${day_sorted[@]}"
-#     do
-#         grep "$i" <<< "$by_day_output"
-#     done
+
+echo -e "统计时间范围：$time_start 至 $time_end"
 
 for i in "${by_day_output[@]}"
     do
@@ -164,6 +138,5 @@ echo -e "${RED}$vercel_url"
 echo -e "${NC}"
 echo -e "${NC}gitee节点："
 echo -e "${RED}$gitee_url"
-echo -e "${NC}"
-echo -e "统计时间范围：$time_start 至 $time_end"
-# $open_url "$github_url"
+
+$open_url "$github_url"
