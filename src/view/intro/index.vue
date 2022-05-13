@@ -17,7 +17,7 @@
         <article class="markdown-body">
           <div class="p1">用途</div>
           <ul>
-            <li>分析 git 项目的 commit 提交时间规律</li>
+            <li>分析 Git 项目的 commit 提交时间规律</li>
             <li>入职新公司后了解项目是否存在996迹象</li>
             <li>在上班的摸鱼时光找点乐子</li>
             <!-- <li class="todo">判断一个项目中到底谁是卷王</li> -->
@@ -31,14 +31,16 @@
         <article class="markdown-body">
           <div class="p1">如何使用</div>
           <ul>
-            <li></li>
-            <li>在项目的根目录，执行以下脚本</li>
-            <pre>/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/npm/code996@latest/bin/code996.sh)"</pre>
-            <li>如果以上方法都不管用，也可以下载该脚本后，直接在git仓库执行</li>
-            <pre>
-https://cdn.jsdelivr.net/npm/code996@latest/bin/code996.sh
-</pre
-            >
+            <p>Mac/Linux 用户，在 Git 项目的根目录，执行以下命令：</p>
+            <div class="p2">
+              <pre>/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/npm/code996@latest/bin/code996.sh)"</pre>
+            </div>
+            <p>
+              Windows用户，
+              <a href="https://cdn.jsdelivr.net/npm/code996@latest/bin/code996.sh">下载该脚本</a>
+              后，直接在 Git 项目目录执行：
+            </p>
+            <pre>sh code996.sh</pre>
           </ul>
         </article>
       </div>

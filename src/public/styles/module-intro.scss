@@ -84,12 +84,16 @@
 
   .markdown-body {
     flex: 1;
-    overflow-x: auto;
+
     ul {
       padding-left: 0;
       list-style: inside;
       li {
         margin-bottom: 16px;
+      }
+      .p2 {
+        width: 100%;
+        overflow-x: auto;
       }
       pre {
         display: table-caption;
@@ -107,11 +111,12 @@
   .intro {
     .wrapper {
       width: 90%;
+      .logo-text {
+        font-size: 17vw;
+        margin-bottom: 10px;
+      }
     }
-    .logo-text {
-      font-size: 17vw;
-      margin-bottom: 10px;
-    }
+
     .main {
       display: block !important;
 
