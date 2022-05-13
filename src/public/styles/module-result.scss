@@ -52,11 +52,10 @@
       font-size: 2em;
       color: #de335e;
       text-shadow: 0px 0px 0px rgb(255 255 255 / 0%), 6px 6px 0px rgb(0 0 0 / 20%);
+      margin-bottom: 40px;
     }
     .result-line {
       display: flex;
-      margin-top: 40px;
-      margin-bottom: 40px;
     }
     .score-box {
       position: relative;
@@ -85,17 +84,20 @@
     }
     .content {
       font-size: 1em;
-      span {
+      .p1 {
         color: #de335e;
         font-size: 1.5em;
       }
-      .exp {
-        margin-top: 20px;
-        border-top: 1px solid #2f2f2f;
-        padding-top: 20px;
-        font-size: 0.85em;
-        opacity: 0.46;
+      .p2 {
+        color: #999;
+        font-size: 0.9em;
+        margin-left: 8px;
       }
+    }
+    .exp {
+      margin-top: 40px;
+      font-size: 0.85em;
+      opacity: 0.46;
     }
   }
 
