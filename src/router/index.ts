@@ -3,7 +3,7 @@ const Intro = () => import('@/view/intro/index.vue')
 const Result = () => import('@/view/result/index.vue')
 
 export const router = createRouter({
-  history: createWebHashHistory('/code996-web/'),
+  history: createWebHashHistory('/'),
   routes: [
     {
       path: '/',

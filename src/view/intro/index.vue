@@ -31,13 +31,9 @@
         <article class="markdown-body">
           <div class="p1">如何使用</div>
           <ul>
+            <li></li>
             <li>在项目的根目录，执行以下脚本</li>
             <pre>/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/npm/code996@latest/bin/code996.sh)"</pre>
-            <li>如果你拥有 node 环境，可以直接执行以下命令</li>
-            <pre>
-npx code996 -o
-</pre
-            >
             <li>如果以上方法都不管用，也可以下载该脚本后，直接在git仓库执行</li>
             <pre>
 https://cdn.jsdelivr.net/npm/code996@latest/bin/code996.sh
@@ -63,7 +59,7 @@ https://cdn.jsdelivr.net/npm/code996@latest/bin/code996.sh
         </div>
         <article class="markdown-body">
           <div class="p1">它安全吗</div>
-          <p>1. 脚本端和 web 端均不会发起任何接口请求以收集数据</p>
+          <p>1. 脚本端和 Web 端均不会发起任何接口请求以收集数据</p>
           <p>2. 除分析的起始时间、commit结果等通用数据外，URL 本身不泄露项目名等任何关键信息</p>
           <p>
             3. 所有代码均已开源到
