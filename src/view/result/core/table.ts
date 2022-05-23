@@ -35,7 +35,7 @@ export function getTableCore() {
   }
 
   const weekTime = codeTime * workDayTypeValue
-  const overtime = weekTime - 37.5
+  const overtime = (overTimeRadio * 0.01 * weekTime).toFixed(1)
 
   const currConfig = {
     type: `${openingTimeValue || '?'}${closingTimeValue % 12 || '?'}${workDayTypeValue || '?'}`,
