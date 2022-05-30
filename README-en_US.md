@@ -6,12 +6,6 @@ Preview: https://hellodigua.github.io/code996/
 
 English | [简体中文](./README.md)
 
-## Usage
-
-- Analyze commit time data for Git projects.
-- To find out if a project has 996 commits when you start a new company.
-- To have some fun while you're at work.
-
 ## How to Use
 
 For Mac or Linux users.

@@ -6,12 +6,6 @@ Preview：https://hellodigua.github.io/code996/
 
 简体中文 | [English](./README-en_US.md)
 
-## 用途
-
-- 分析 Git 项目的 commit 提交时间数据
-- 入职新公司后了解项目是否存在 996 现象
-- 在上班的摸鱼时光找点乐子
-
 ## 如何使用
 
 Mac 或 Linux 用户：
@@ -113,6 +107,6 @@ sh code996.sh
 
 本程序及其源码和编译产物附属 [Unlicense](LICENSE) 许可，其依赖的相关库和内容不做许可承诺，请参考他们的原始许可。
 
-[![license](https://img.shields.io/github/license/hellodigua/code996)]()
-[![](https://img.shields.io/jsdelivr/gh/hm/hellodigua/code996)]()
-[![views](https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/l2vhuyzttoxl2nx0wzl2)]()
+![license](https://img.shields.io/github/license/hellodigua/code996)
+![](https://img.shields.io/jsdelivr/gh/hm/hellodigua/code996)
+![views](https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/l2vhuyzttoxl2nx0wzl2)

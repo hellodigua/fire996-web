@@ -12,20 +12,6 @@
     <div class="main wrapper">
       <div class="item">
         <div class="left">
-          <div class="icon-mark">?</div>
-        </div>
-        <article class="markdown-body">
-          <div class="p1">用途</div>
-          <ul>
-            <li>分析 Git 项目的 commit 提交时间数据</li>
-            <li>入职新公司后了解项目是否存在 996 现象</li>
-            <li>在上班的摸鱼时光找点乐子</li>
-            <!-- <li class="todo">判断一个项目中到底谁是卷王</li> -->
-          </ul>
-        </article>
-      </div>
-      <div class="item">
-        <div class="left">
           <div class="icon-mark">></div>
         </div>
         <article class="markdown-body">
